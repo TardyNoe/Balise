@@ -10,11 +10,31 @@ void setup() {
 
 void loop() {
   if (ESP_BT.available()) { // Check if we receive anything from Bluetooth
-    String dataReceived = ESP_BT.readString(); // Read what we recevive
+    String dataReceived = ESP_BT.readString(); // Read what we receive
     Serial.println("Received:" + dataReceived); // Print what we receive
 
+    // Extracting the float values
+    int firstCommaIndex = dataReceived.indexOf(',');
+    int secondCommaIndex = dataReceived.indexOf(',', firstCommaIndex + 1);
+
+    String firstValue = dataReceived.substring(0, firstCommaIndex);
+    String secondValue = dataReceived.substring(firstCommaIndex + 1, secondCommaIndex);
+    String thirdValue = dataReceived.substring(secondCommaIndex + 1);
+
+    float value1 = firstValue.toFloat();
+    float value2 = secondValue.toFloat();
+    float value3 = thirdValue.toFloat();
+
+    // Print the extracted values
+    Serial.print("Value 1: ");
+    Serial.println(value1);
+    Serial.print("Value 2: ");
+    Serial.println(value2);
+    Serial.print("Value 3: ");
+    Serial.println(value3);
+
     // Send a response
-    ESP_BT.println("Hello from ESP32!");
+    ESP_BT.println(dataReceived);
   }
   delay(20);
 }
