@@ -1,0 +1,20 @@
+#include "BluetoothSerial.h"
+
+BluetoothSerial ESP_BT; // Object for Bluetooth
+
+void setup() {
+  Serial.begin(115200);
+  ESP_BT.begin("ESP32_BT_Test"); // Name of your Bluetooth signal
+  Serial.println("Bluetooth device is ready to pair");
+}
+
+void loop() {
+  if (ESP_BT.available()) { // Check if we receive anything from Bluetooth
+    String dataReceived = ESP_BT.readString(); // Read what we recevive
+    Serial.println("Received:" + dataReceived); // Print what we receive
+
+    // Send a response
+    ESP_BT.println("Hello from ESP32!");
+  }
+  delay(20);
+}
