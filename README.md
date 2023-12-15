@@ -39,7 +39,7 @@ Clone the project repository and build the package:
 ```
 source ~/catkin_ws/devel/setup.bash
 cd ~/catkin_ws/src
-git clone https://github.com/TardyNoe/Balise
+git clone https://github.com/TardyNoe/Balise.git
 cd ~/catkin_ws/
 catkin build
 ```
