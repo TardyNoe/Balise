@@ -1,0 +1,9 @@
+<launch>
+    <node name="Cam" pkg="Pami" type="CameraPublisher.py" output="screen" />
+    <node name="Terrain" pkg="Pami" type="Terrain.py" output="screen" />
+    <node name="Mask" pkg="Pami" type="Mask.py" output="screen" />
+    <node name="Grid" pkg="Pami" type="Grid.py" output="screen" />
+    <node name="ObjectDetection" pkg="Pami" type="ObjectDetection.py" output="screen" />
+    <node name="TagDetector" pkg="Pami" type="TagDetector.py" output="screen" />
+</launch>
+
