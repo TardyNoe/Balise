@@ -82,7 +82,7 @@ sudo nmcli con up RobotConn
 
 ## Components and Resources:
 
-Here is the material the we used, but it should work with any wide lens camera. You don't need a such expensive camera.
+Here is the material the we used, but it should work with any wide lens camera. You don't need a such expensive camera. We use a broom handle to place the camera at 1 meter heigh (Balse.3fd) you will need to change the attach point to comply to the eurobot rules.
 
 | Item                      | Description                           | Link                                                                                                             |
 |---------------------------|---------------------------------------|------------------------------------------------------------------------------------------------------------------|
