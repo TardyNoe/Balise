@@ -51,10 +51,12 @@ Update the camera resolution and matrix (mtx and dist) in the Balise/src/CameraP
 ### Configuration
 The program is pre-configured for the 2024 Eurobot challenge.
 If Aruco tag positions change in future challenges, update the image in Balise/src/table.png.
+
 Additionally, it's important to update the object detection model using TensorFlow Lite. 
-In our case, we trained it with Google Vertex AI, a paid tool (offering 300 euros free for one month for each Google account). Google Vertex AI provides an all-in-one solution with image labeling, cloud-based training with predefined presets. 
+In our case, we trained it with [Google Vertex AI](https://cloud.google.com/vertex-ai?hl=fr), a paid tool (offering 300 euros for each Google account, so you can train your model for free). Google Vertex AI provides an all-in-one solution with image labeling, cloud-based training with predefined presets. 
 The model can also be created locally or using other tools, as long as it results in a TensorFlow Lite model. 
 To update the model, you'll need to take multiple photos of the playing field with the different objects (or object states) placed on it. These images then need to be labeled, and the model trained with them.
+Then you can export the model and replace the model.tflite file.
 
 
 ### Launch Instructions
