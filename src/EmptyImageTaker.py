@@ -5,6 +5,8 @@ from sensor_msgs.msg import Image
 import cv2
 from cv_bridge import CvBridge, CvBridgeError
 
+EmptyImagePath = '/home/noe/catkin_ws/src/Pami/src/EmptyImage.png'
+
 def image_callback(msg):
     bridge = CvBridge()
     try:
@@ -14,7 +16,7 @@ def image_callback(msg):
         print(e)
 
     # Save the image
-    cv2.imwrite('/home/noe/catkin_ws/src/Pami/src/EmptyImage.png', cv_img)
+    cv2.imwrite(EmptyImagePath, cv_img)
 
     # Shutdown the node
     rospy.signal_shutdown("Image captured and saved.")
