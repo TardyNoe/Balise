@@ -80,6 +80,16 @@ sudo nmcli con modify RobotConn wifi-sec.psk "12345678»
 And run it like this :
 sudo nmcli con up RobotConn
 
+## Components and Resources
+
+| Item                      | Description                           | Link                                                                                                             |
+|---------------------------|---------------------------------------|------------------------------------------------------------------------------------------------------------------|
+| ELP CMOS OV4689           | Camera Module                         | [Amazon FR](https://www.amazon.fr/gp/product/B07KMZ9GHZ/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)         |
+| M12 × 0.5 185° Lens       | Wide-Angle Lens for Camera            | [Amazon FR](https://www.amazon.fr/gp/product/B07MFYM133/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)         |
+| Brostrend 1200Mbps Wi-Fi Dongle | Optional Wi-Fi Dongle for Raspberry Pi | [Brostrend](https://www.brostrend.com/collections/france/products/brostrend-1200mbps-linux-usb-cle-wifi-adaptateurs-longue-portee) |
+| Raspberry Pi 4 (4GB)      | Main Microcontroller                  | [Official Site](https://www.raspberrypi.org/products/raspberry-pi-4-model-b/)                                   |
+
+
 ## System Architecture
 To run a single node use : rosrun <nodename>
 The roslaunch command let you run multiple node using a launch file
