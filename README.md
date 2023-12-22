@@ -48,8 +48,8 @@ Change also ref_image_path.py in Terrain.py
 
 ### Camera Calibration
 Calibrate your camera : You can use the ros package : [Monocular Camera Calibration ROS Package](http://wiki.ros.org/camera_calibration/Tutorials/MonocularCalibration).  
-Or use python and cv2 : [Monocular Camera Calibration Python and cv2]https://docs.opencv.org/4.x/dc/dbb/tutorial_py_calibration.html
-Update the camera resolution and matrix (mtx and dist) in the Balise/src/CameraPublisher.py file due to lens distortion.
+Or use python and cv2 : [Monocular Camera Calibration Python and cv2](https://docs.opencv.org/4.x/dc/dbb/tutorial_py_calibration.html)
+Update the camera resolution and matrix (mtx1 and dist1) in the Balise/src/CameraPublisher.py file due to lens distortion.
 
 ### Configuration
 The program is pre-configured for the 2024 Eurobot challenge.
