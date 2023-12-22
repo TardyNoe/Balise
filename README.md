@@ -104,7 +104,10 @@ Here is the material the we used, but it should work with any wide lens camera. 
 
 
 ## System Architecture
-To run a single node use : rosrun <nodename>
+To run a single node use : 
+```
+rosrun <nodename>
+```
 The roslaunch command let you run multiple node using a launch file
 
 Coordinates system : 
