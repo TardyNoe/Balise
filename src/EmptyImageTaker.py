@@ -5,7 +5,7 @@ from sensor_msgs.msg import Image
 import cv2
 from cv_bridge import CvBridge, CvBridgeError
 
-EmptyImagePath = '/home/noe/catkin_ws/src/Pami/src/EmptyImage.png'
+EmptyImagePath = '/home/balise/catkin_ws/src/Balise/src/EmptyImage.png'
 
 def image_callback(msg):
     bridge = CvBridge()
