@@ -242,4 +242,6 @@ $ python3 -m pip install tflite-runtime
 $ sudo chmod +x ~/catkin_ws/src/Balise/src/*
 $ echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
 $ source ~/.bashrc
+$ sudo apt-get install bluetooth bluez
+$ sudo apt-get install bluez python3-bluez
 ```
