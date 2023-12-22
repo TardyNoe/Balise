@@ -101,28 +101,33 @@ The roslaunch command let you run multiple node using a launch file
    - Subscribes to: `/terrain` for the straightened terrain image.
    - Function: Identifies and locates tags in the image.
    - Publishes: `/tags` (Float32MultiArray) indicating the position and identification and orientation of the tag. (folling format [id1,angle1,x1,y1,id2,angle1,x2,y2.....idn,anglen,xn,yn])
+     
+5. **TagsAngle Node**: 
+   - Subscribes to: `/cam1` and not to `/terrain` if the tag is outside of the terrain (solar pannel).
+   - Function: Identifies and locates tags in the image.
+   - Publishes: `/tagsAngle` (Float32MultiArray) indicating the position and identification and orientation of the tag. (folling format [id1,angle1,id2,angle1,x2,y2.....idn,anglen])
 
-5. **Astar Node**: 
+6. **Astar Node**: 
    - Subscribes to: `/mask` for obstacle data.
    - Function: Calculates the optimal path avoiding obstacles.
    - Publishes: `/path` which outlines the computed path.
 
-6. **RobotCommunicationWifi Node**: 
+7. **RobotCommunicationWifi Node**: 
    - Function: Send and recive an example playload via wifi between the Pi and the ESP32
 
-7. **RobotCommunicationBLE Node**: 
+8. **RobotCommunicationBLE Node**: 
    - Function: Send and recive an example playload via bluetooth between the Pi and the ESP32
 
-8. **ObjectDetection Node**: 
+9. **ObjectDetection Node**: 
    - Subscribes to: `/terrain`
    - Function: Using tensorflow (MobileNet) it detect the different type of object and the position. You can modify the treshold of the score in the .py file
    - Publishes: `/obj` (Float32MultiArray) indicating the position and identification of the object. (folling format [id1,x1,y1,id2,x2,y2.....idn,xn,yn])
 
-9. Grid
+10. Grid
   - Subscribe to `/mask`
   - Publishes: `/map` an occupency grid (usefull if you are using to RVIZ to display the map)
 
-10. ImageTaker
+11. ImageTaker
   - Subscribe to `/terrain`
   - Run it to create a referance image of the empty terrain
 
