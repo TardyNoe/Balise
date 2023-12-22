@@ -6,7 +6,7 @@ from cv_bridge import CvBridge
 from sensor_msgs.msg import Image
 from geometry_msgs.msg import PoseStamped
 
-EmptyImagePath = "/home/noe/catkin_ws/src/Pami/src/EmptyImage.png"
+EmptyImagePath = "/home/balise/catkin_ws/src/Pami/Balise/EmptyImage.png"
 trsh = 60
 emptyImage = None
 kernel = np.ones((5,5), np.uint8)
