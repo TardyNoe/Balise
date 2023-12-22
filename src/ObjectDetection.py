@@ -9,7 +9,7 @@ import tflite_runtime.interpreter as tflite
 import time
 
 # Load TensorFlow Lite model
-tflite_model_path = '/home/noe/catkin_ws/src/Pami/src/model.tflite' 
+tflite_model_path = '/home/balise/catkin_ws/src/Balise/src/model.tflite' 
 interpreter = tflite.Interpreter(model_path=tflite_model_path)
 interpreter.allocate_tensors()
 
