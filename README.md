@@ -106,6 +106,9 @@ Here is the material the we used, but it should work with any wide lens camera. 
 To run a single node use : rosrun <nodename>
 The roslaunch command let you run multiple node using a launch file
 
+Coordinates system : 
+![Screenshot](https://github.com/TardyNoe/Balise/blob/main/coordinates.png?raw=true)
+
 1. **Camera Node**:
    - Function: open the camera on the device
    - Publishes: `/cam1`, which contains the undistorded video feed of the camera.
