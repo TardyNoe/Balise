@@ -6,6 +6,7 @@ from cv_bridge import CvBridge
 from sensor_msgs.msg import Image
 from geometry_msgs.msg import PoseStamped
 
+EmptyImagePath = "/home/noe/catkin_ws/src/Pami/src/EmptyImage.png"
 trsh = 60
 emptyImage = None
 kernel = np.ones((5,5), np.uint8)
@@ -36,7 +37,7 @@ def image_callback(msg):
     pub.publish(image_message)
 
 if __name__ == '__main__':
-    emptyImage = cv2.imread("/home/noe/catkin_ws/src/Pami/src/EmptyImage.png")
+    emptyImage = cv2.imread(EmptyImagePath)
     rospy.init_node('image_processor', anonymous=True)
 
     bridge = CvBridge()
