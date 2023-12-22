@@ -47,7 +47,8 @@ You also need to change the empty image path (EmptyImagePath) in mask.py and Emp
 Change also ref_image_path.py in Terrain.py
 
 ### Camera Calibration
-Calibrate your camera : You can use the ros package : [Monocular Camera Calibration ROS Package](http://wiki.ros.org/camera_calibration/Tutorials/MonocularCalibration).  
+Calibrate your camera : You can use the ros package : [Monocular Camera Calibration ROS Package](http://wiki.ros.org/camera_calibration/Tutorials/MonocularCalibration).
+
 Or use python and cv2 : [Monocular Camera Calibration Python and cv2](https://docs.opencv.org/4.x/dc/dbb/tutorial_py_calibration.html)
 Update the camera resolution and matrix (mtx1 and dist1) in the Balise/src/CameraPublisher.py file due to lens distortion.
 
@@ -107,6 +108,7 @@ To run a single node use : rosrun <nodename>
 The roslaunch command let you run multiple node using a launch file
 
 Coordinates system : 
+
 ![Screenshot](https://github.com/TardyNoe/Balise/blob/main/coordinates.png?raw=true)
 
 1. **Camera Node**:
