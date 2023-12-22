@@ -7,6 +7,8 @@ import numpy as np
 from sensor_msgs.msg import Image
 from cv_bridge import CvBridge, CvBridgeError
 
+ref_image_path = "/home/noe/catkin_ws/src/Pami/src/table.png"
+
 class ImagePublisher:
     def __init__(self):
         self.cam1_sub = rospy.Subscriber("cam1", Image, self.callback_cam1)
@@ -60,7 +62,6 @@ def main():
     img_subscriber = ImagePublisher()
 
     real_height = 3
-    ref_image_path = "/home/noe/catkin_ws/src/Pami/src/table.png"
     ref_image = cv2.imread(ref_image_path)
     ref_image = cv2.resize(ref_image, (800, 1200), interpolation=cv2.INTER_AREA)
     rospy.sleep(1)
