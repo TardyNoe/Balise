@@ -83,7 +83,7 @@ sudo apt-get install network-manager
 sudo nmcli con add type wifi ifname wlan0 con-name RobotConn autoconnect yes ssid Raspb
 sudo nmcli con modify RobotConn 802-11-wireless.mode ap 802-11-wireless.band bg ipv4.method shared 802-11-wireless.channel 11
 sudo nmcli con modify RobotConn wifi-sec.key-mgmt wpa-psk
-sudo nmcli con modify RobotConn wifi-sec.psk "12345678»
+sudo nmcli con modify RobotConn wifi-sec.psk "12345678"
 ```
 
 And run it like this :
