@@ -80,7 +80,9 @@ sudo nmcli con modify RobotConn wifi-sec.psk "12345678»
 And run it like this :
 sudo nmcli con up RobotConn
 
-## Components and Resources
+## Components and Resources:
+
+Here is the material the we used, but it should work with any wide lens camera. You don't need a such expensive camera.
 
 | Item                      | Description                           | Link                                                                                                             |
 |---------------------------|---------------------------------------|------------------------------------------------------------------------------------------------------------------|
