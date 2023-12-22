@@ -7,7 +7,7 @@ import numpy as np
 from sensor_msgs.msg import Image
 from cv_bridge import CvBridge, CvBridgeError
 
-ref_image_path = "/home/noe/catkin_ws/src/Pami/src/table.png"
+ref_image_path = "/home/balise/catkin_ws/src/Balise/src/table.png"
 
 class ImagePublisher:
     def __init__(self):
