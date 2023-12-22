@@ -1,7 +1,7 @@
 <launch>
-    <node name="Cam" pkg="Pami" type="CameraPublisher.py" output="screen" />
-    <node name="Terrain" pkg="Pami" type="Terrain.py" output="screen" />
-    <node name="Mask" pkg="Pami" type="Mask.py" output="screen" />
-    <node name="Grid" pkg="Pami" type="Grid.py" output="screen" />
+    <node name="Cam" pkg="Balise" type="CameraPublisher.py" output="screen" />
+    <node name="Terrain" pkg="Balise" type="Terrain.py" output="screen" />
+    <node name="Mask" pkg="Balise" type="Mask.py" output="screen" />
+    <node name="Grid" pkg="Balise" type="Grid.py" output="screen" />
 </launch>
 
