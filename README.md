@@ -43,6 +43,9 @@ git clone https://github.com/TardyNoe/Balise.git
 cd ~/catkin_ws/
 catkin build
 ```
+You also need to change the empty image path (EmptyImagePath) in mask.py and EmptyImageTaker.py
+Change also ref_image_path.py in Terrain.py
+
 ### Camera Calibration
 Calibrate your camera : You can use the ros package : [Monocular Camera Calibration ROS Package](http://wiki.ros.org/camera_calibration/Tutorials/MonocularCalibration).  
 Or use python and cv2 : [Monocular Camera Calibration Python and cv2]https://docs.opencv.org/4.x/dc/dbb/tutorial_py_calibration.html
