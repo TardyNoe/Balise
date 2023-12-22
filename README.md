@@ -69,16 +69,21 @@ If using a Raspberry Pi, you can preview the video feed over a local network (no
 Refer to ROS Network Setup : http://wiki.ros.org/ROS/NetworkSetup. You also need to install ROS on the machine that preview the video feed (use a Ubutnu VM and rviz)
 
 ## Robot connexion :
-For WiFi, configure the Pi as an access point. For internet, use a second WiFi adapter or Ethernet.
+For the ESP WiFi, configure the Pi as an access point. For internet, use a second WiFi adapter or Ethernet.
 Configuration example on Ubuntu:
-You can do like this on ubutnu :
+Configure the hotspot
+```
 sudo nmcli con add type wifi ifname wlan0 con-name RobotConn autoconnect yes ssid Raspb
 sudo nmcli con modify RobotConn 802-11-wireless.mode ap 802-11-wireless.band bg ipv4.method shared 802-11-wireless.channel 11
 sudo nmcli con modify RobotConn wifi-sec.key-mgmt wpa-psk
 sudo nmcli con modify RobotConn wifi-sec.psk "12345678»
+```
 
 And run it like this :
+```
 sudo nmcli con up RobotConn
+```
+
 
 ## Components and Resources:
 
